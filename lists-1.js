@@ -77,10 +77,10 @@ console.log(names1FindResult);
 
 console.log(names.indexOf('Viswa-1'));
 
-let randomNumbers = [3,1,5,8,2,4];
+let randomNumbers = [3, 1, 5, 8, 2, 4];
 console.log(names.sort());
 // console.log(randomNumbers.sort());
-console.log(randomNumbers.sort((num1, num2)=>{
+console.log(randomNumbers.sort((num1, num2) => {
     return num2 - num1;
     // return num1 - num2;
 }));
@@ -91,17 +91,19 @@ console.log(arr1);
 
 
 const arr2 = [
-    [1,2,3,4],
-    [3,4,5,6],
-    [5,6,7,8]
+    [1, 2, 3, 4],
+    [3, 4, 5, 6],
+    [5, 6, 7, 8]
 ]
 
 console.log(arr2);
 
-const result = arr2.map(row => {
-     row.map(col => {
+const result = arr2.map((row) => {
+    return row.map((col) => {
         return col * 2;
     })
-})
+});
 
 console.log(result);
+
+// console.log(arr2.flat());
