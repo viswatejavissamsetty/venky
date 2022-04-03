@@ -2,4 +2,6 @@
 2. math module
 3. classes
 4. async-await and promises
-4. DOM manuplation
+5. error handling
+6. file operations
+7. DOM manuplation
