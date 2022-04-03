@@ -1,0 +1,5 @@
+1. timers
+2. math module
+3. classes
+4. async-await and promises
+4. DOM manuplation
