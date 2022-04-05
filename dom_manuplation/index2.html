@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <form id="userForm">
+        <input type="text" name="name" id="name" placeholder="Name" required>
+        <br>
+        <input type="email" name="email" id="email" placeholder="Email" required>
+        <br>
+        <input type="password" name="password" id="password" placeholder="Password" required>
+        <br>
+        <!-- <button disabled="disabled">Disabled</button> -->
+        <button type="reset">Reset</button>
+        <button type="submit">Submit</button>
+    </form>
+
+    <script>
+        document.getElementById("userForm").onsubmit = (e) => {
+            e.preventDefault();
+
+            const name = document.getElementById("name").value;
+            const email = document.getElementById("email").value;
+            const password = document.getElementById("password").value;
+
+            console.group();
+            console.log(name);
+            console.log(email);
+            console.log(password);
+            console.groupEnd();
+        }
+    </script>
+</body>
+</html>
